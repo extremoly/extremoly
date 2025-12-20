@@ -1,0 +1,147 @@
+
+:root{
+  --bg:#04050b; /* near-black */
+  --panel:#071528; /* panel */
+  --accent-cyan:#00d4ff; /* neon cyan */
+  --accent-pink:#ff2dca; /* neon pink */
+  --accent-purple:#7b3cff; /* neon purple */
+  --muted:#7fa6bf;
+  --text:#e6f7ff;
+  --glass: rgba(255,255,255,0.03);
+  --max-width:1100px;
+}
+
+*{box-sizing:border-box}
+.site-header{background:transparent;border-bottom:1px solid rgba(255,255,255,0.03);backdrop-filter: blur(6px);z-index:20}
+.site-header .wrap{display:flex;align-items:center;justify-content:space-between}
+
+html, body { height: 100%; }
+body{display:flex;flex-direction:column;min-height:100vh;font-family:Inter,Segoe UI,Arial, sans-serif;line-height:1.6;color:var(--text);margin:0;background:linear-gradient(180deg,var(--bg),#041028);}
+.wrap{max-width:var(--max-width);margin:0 auto;padding:1rem}
+.brand a{font-weight:800;color:var(--accent-cyan);text-decoration:none;letter-spacing:0.4px}
+.site-nav a{margin:0 0.5rem;color:var(--muted);text-decoration:none;padding:6px 8px;border-radius:6px}
+.site-nav a:hover{color:var(--text);background:linear-gradient(90deg, rgba(0,212,255,0.06), rgba(41,168,255,0.04));box-shadow:0 8px 28px rgba(0,212,255,0.06)}
+.menu-toggle{display:none;background:transparent;border:0;font-size:1.25rem;color:var(--muted)}
+.container{padding:2rem}
+/* Ensure main content forces distance between header and footer */
+main.container{flex:1}
+.hero{display:flex;gap:2rem;align-items:center}
+.profile-photo{width:150px;height:150px;border-radius:12px;background:linear-gradient(135deg,#04233a 0%, #06223b 100%);box-shadow:0 8px 30px rgba(4,35,58,0.6);display:block}
+.hero-text h1{margin:0;color:var(--text);text-shadow:0 2px 12px rgba(0,212,255,0.08)}
+.lead{color:var(--muted);margin-top:0.4rem}
+.btn{display:inline-block;padding:0.6rem 0.9rem;background:linear-gradient(90deg,var(--accent-pink),var(--accent-cyan));color:#021223;border-radius:10px;text-decoration:none;margin-right:0.5rem;box-shadow:0 10px 40px rgba(123,60,255,0.12);font-weight:700;position:relative;overflow:visible;transition:transform .18s cubic-bezier(.2,.9,.3,1),box-shadow .18s,filter .18s}
+.btn:focus{outline:3px solid rgba(0,212,255,0.12);outline-offset:3px}
+.btn:hover{transform:translateY(-4px);box-shadow:0 18px 60px rgba(41,168,255,0.18);filter:brightness(1.04)}
+.btn:active{transform:translateY(-1px) scale(.985);box-shadow:0 6px 30px rgba(41,168,255,0.12) inset}
+.btn::after{content:'';position:absolute;inset:-6px;z-index:-1;border-radius:12px;opacity:0;transition:opacity .25s;box-shadow:0 20px 60px rgba(0,212,255,0.08)}
+.btn:hover::after{opacity:1}
+.btn.ghost{background:transparent;color:var(--accent-cyan);border:1px solid rgba(41,168,255,0.12);box-shadow:none;transition:color .18s,box-shadow .18s,transform .18s}
+.btn.ghost:hover{color:var(--text);border-color:rgba(0,212,255,0.28);box-shadow:0 12px 40px rgba(0,212,255,0.08);transform:translateY(-4px)}
+.btn.ghost:active{transform:translateY(-1px);box-shadow:0 6px 20px rgba(0,212,255,0.04) inset}
+
+@keyframes btnPulse{0%{box-shadow:0 10px 30px rgba(123,60,255,0.06),0 0 0 0 rgba(0,212,255,0.0)}50%{box-shadow:0 18px 60px rgba(41,168,255,0.12),0 0 28px rgba(0,212,255,0.02)}100%{box-shadow:0 10px 30px rgba(123,60,255,0.06),0 0 0 0 rgba(0,212,255,0.0)}}
+.btn.pulse{animation:btnPulse 2.8s infinite ease-in-out}
+.features{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;margin-top:2rem}
+.features article{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:1rem;border-radius:10px;border:1px solid rgba(255,255,255,0.03)}
+.site-footer{border-top:1px solid rgba(255,255,255,0.03);padding:1rem 0;background:transparent;margin-top:auto}
+.site-footer .wrap{display:flex;justify-content:space-between;align-items:center}
+.social{margin-right:0.6rem;color:var(--muted);display:inline-flex;align-items:center}
+.social svg{filter:drop-shadow(0 6px 18px rgba(0,212,255,0.06))}
+.repo-link{margin-left:0.6rem;color:var(--accent);text-decoration:none}
+.site-footer{border-top:1px solid rgba(255,255,255,0.03);padding:1rem 0;background:transparent}
+.site-footer .wrap{display:flex;justify-content:space-between;align-items:center}
+.social{margin-right:0.6rem;color:var(--muted);display:inline-flex;align-items:center}
+.social svg{filter:drop-shadow(0 10px 24px rgba(123,60,255,0.06))}
+.repo-link{margin-left:0.6rem;color:var(--accent-cyan);text-decoration:none}
+
+/* Footer emphasis */
+.site-footer{border-top:1px solid rgba(255,255,255,0.03);padding:1rem 0;background:transparent;margin-top:auto}
+.site-footer .footer-inner{display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.footer-brand{font-weight:700;margin:0;color:var(--text)}
+.footer-note{margin:6px 0 0 0;color:var(--muted);font-size:0.92rem}
+.footer-right{display:flex;align-items:center;gap:1rem}
+.footer-cta{display:flex;gap:0.6rem;align-items:center}
+.footer-cta .btn{padding:0.45rem 0.75rem;font-size:0.95rem}
+.footer-cta .btn.ghost{background:transparent}
+.footer-socials{display:flex;align-items:center;gap:0.5rem}
+.footer-socials .social{width:36px;height:36px;border-radius:8px;display:inline-flex;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,0.02);background:linear-gradient(180deg, rgba(0,0,0,0.25), rgba(255,255,255,0.01));transition:transform .18s,box-shadow .18s}
+.footer-socials .social:hover{transform:translateY(-4px);box-shadow:0 18px 60px rgba(41,168,255,0.14)}
+.footer-socials svg{stroke:currentColor;color:var(--muted)}
+.site-footer .repo-link{color:var(--accent-pink);padding-left:0.4rem}
+
+/* small entrance for footer */
+@keyframes footerUp{from{transform:translateY(12px);opacity:0}to{transform:none;opacity:1}}
+.site-footer{animation:footerUp .6s ease both}
+
+/* Make header and footer visually larger on small screens so they feel full-screen-ish */
+.site-header{display:flex;align-items:center}
+.site-footer{display:flex;align-items:center}
+
+@media (max-width:600px){
+  .footer-brand{font-size:1rem}
+  .footer-note{font-size:0.9rem}
+}
+
+/* neon animated background */
+body:after{content:'';position:fixed;inset:0;z-index:-1;background:radial-gradient(600px circle at 10% 10%, rgba(123,60,255,0.06), transparent 8%), radial-gradient(500px circle at 90% 80%, rgba(0,212,255,0.06), transparent 8%), linear-gradient(180deg, rgba(4,5,11,0.9), rgba(4,10,22,0.95));pointer-events:none}
+
+/* flicker neon on headings */
+@keyframes neonFlicker{0%{text-shadow:0 0 6px rgba(255,45,202,0.6),0 0 18px rgba(0,212,255,0.08)}50%{text-shadow:0 0 12px rgba(255,45,202,0.9),0 0 36px rgba(0,212,255,0.12)}100%{text-shadow:0 0 6px rgba(255,45,202,0.6),0 0 18px rgba(0,212,255,0.08)}}
+.hero-text h1{animation:neonFlicker 3.2s ease-in-out infinite}
+
+/* Responsive */
+@media (max-width:900px){
+  .hero{flex-direction:column;align-items:flex-start}
+  .features{grid-template-columns:1fr}
+  .menu-toggle{display:inline-block}
+  .site-nav{display:none;position:absolute;left:0;right:0;top:64px;background:linear-gradient(180deg, rgba(4,18,36,0.9), rgba(4,18,36,0.95));padding:1rem;border-top:1px solid rgba(255,255,255,0.02)}
+  .site-nav.open{display:block}
+}
+
+/* small polish */
+img{max-width:100%;height:auto;filter:drop-shadow(0 12px 36px rgba(0,0,0,0.6))}
+
+/* Projects grid and card styles */
+.projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.25rem;margin-top:1.25rem}
+.project-card{background:linear-gradient(180deg, rgba(255,255,255,0.015), rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.03);border-radius:12px;overflow:hidden;display:flex;flex-direction:column;transition:transform .22s,box-shadow .22s}
+.project-card:hover{transform:translateY(-6px);box-shadow:0 30px 80px rgba(0,212,255,0.06)}
+.project-image{display:block;position:relative}
+.project-image img{display:block;width:100%;height:180px;object-fit:cover;background:#061528}
+.image-overlay{position:absolute;left:12px;right:12px;bottom:12px;padding:8px 10px;border-radius:8px;background:linear-gradient(90deg, rgba(0,0,0,0.35), rgba(0,0,0,0.2));backdrop-filter: blur(6px);display:flex;flex-direction:column}
+.overlay-title{color:var(--text);font-weight:700;font-family:'Orbitron',sans-serif}
+.overlay-sub{color:var(--muted);font-size:12px;margin-top:3px}
+.project-body{padding:1rem}
+.project-body h3{margin:0 0 0.4rem 0;font-family:'Orbitron',sans-serif;color:var(--accent-pink)}
+.project-desc{color:var(--muted);margin:0 0 0.8rem 0}
+.project-links .btn{margin-right:0.4rem}
+
+/* Resume page styles */
+.resume{max-width:900px;margin:0 auto;padding:1rem}
+.resume-header{display:flex;justify-content:space-between;align-items:center;gap:1rem;margin-bottom:1rem}
+.resume-header h1{margin:0;font-family:'Orbitron',sans-serif;color:var(--accent-cyan)}
+.resume-header .muted{color:var(--muted)}
+.resume-actions a{margin-left:0.5rem}
+.resume-summary h2,.resume-section h2{font-family:'Orbitron',sans-serif;color:var(--accent-pink);margin-bottom:0.5rem}
+.resume-section{margin-bottom:1rem;padding:1rem;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.005));border:1px solid rgba(255,255,255,0.02)}
+.experience-item{margin-bottom:0.6rem}
+.experience-item .meta{color:var(--muted);font-size:0.9rem;margin-bottom:0.4rem}
+.skill-list{display:flex;flex-wrap:wrap;gap:0.6rem}
+.skill-list{display:flex;flex-wrap:wrap;gap:0.6rem}
+.skill{flex:1 1 260px}
+.skill-label{font-weight:700;margin-bottom:0.35rem}
+.skill-track{background:rgba(255,255,255,0.04);height:12px;border-radius:8px;overflow:hidden}
+.skill-bar{height:100%;background:linear-gradient(90deg,var(--accent-pink),var(--accent-cyan));width:0%;transition:width 900ms cubic-bezier(.2,.9,.3,1)}
+.copy-btn{margin-left:0.5rem;padding:0.25rem 0.5rem;font-size:0.9rem}
+.resume-actions{margin:0.8rem 0 1rem 0;display:flex;gap:0.6rem;align-items:center}
+
+
+/* Projects page hero (centered, prominent) */
+.page-hero{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:2.25rem 1rem 1.25rem;margin:0 0 1rem}
+.page-hero h1{font-family:'Orbitron',sans-serif;font-size:clamp(2.4rem,6vw,4rem);margin:0;color:var(--accent-cyan);letter-spacing:0.6px;text-shadow:0 6px 28px rgba(0,212,255,0.10),0 2px 8px rgba(123,60,255,0.06);transform:translateZ(0);animation:heroPop .55s ease both}
+.page-hero .subtitle{color:var(--muted);margin-top:0.55rem;font-family:'Share Tech Mono',monospace}
+
+@keyframes heroPop{from{opacity:0;transform:translateY(10px) scale(.98)}to{opacity:1;transform:none}}
+
+/* make the heading feel closer with subtle scale on hover (desktop) */
+.page-hero:hover h1{transform:scale(1.02)}
+
