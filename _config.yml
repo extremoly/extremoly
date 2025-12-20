@@ -1,0 +1,14 @@
+title: "Your Name - Portfolio"
+email: "your.email@example.com"
+description: "Personal portfolio showcasing projects and background."
+baseurl: "" # change if deploying to username.github.io/repo
+url: "" # your site URL, e.g., https://username.github.io
+theme: minima
+plugins: [jekyll-feed]
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
