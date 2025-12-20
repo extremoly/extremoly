@@ -1,0 +1,28 @@
+<article class="project-card">
+  {% if include.title contains "Project 1" %}
+    <div class="project-image video-embed">
+      <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
+        <iframe src="https://www.youtube.com/embed/FlYn6JDEsWs" title="{{ include.title }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;border-radius:8px;"></iframe>
+      </div>
+      <div class="image-overlay">
+        <div class="overlay-title">{{ include.title }}</div>
+        <div class="overlay-sub">{{ include.tags }}</div>
+      </div>
+    </div>
+  {% else %}
+  <div class="project-image video-embed">
+        <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
+        <iframe width="718" height="403" src="https://www.youtube.com/embed/YRtAmgeKXrY?si=dxN7mrU1M6dBh23S" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="image-overlay">
+            <div class="overlay-title">{{ include.title }}</div>
+            <div class="overlay-sub">{{ include.tags }}</div>
+        </div>
+    </div>
+  {% endif %}
+
+  <div class="project-body">
+    <h3>{{ include.title }}</h3>
+    <p class="project-desc">{{ include.description }}</p>
+  </div>
+</article>
