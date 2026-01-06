@@ -11,7 +11,7 @@ title: Home
     <p>
       <a class="btn" href="https://extremoly.github.io/extremoly/projects.html">See my projects</a>
       <a class="btn ghost" href="https://extremoly.github.io/extremoly/about.html">About</a>  
-    </p>
+    </p>  
   </div>
 </section> 
 
@@ -25,6 +25,7 @@ title: Home
     <p>You know where to find my credentials.</p>
   </article>
 </section>
+
 
 
 
