@@ -33,7 +33,7 @@ Undergraduate student at ADA University (School of SITE), studying Information T
 
 <details open>
 	<summary><strong>Project 1 — How does Hardware work?</strong></summary>
-	<p><strong>Role:</strong> Front-end developer</p>
+	<p><strong>Role:</strong> Front-end developer</p> 
 	<p><strong>Description:</strong> Interactive web application demonstrating user input, dynamic UI, and data visualization. Built with JavaScript and modern CSS. <a href="[/extremoly/projects.html](https://extremoly.github.io/extremoly/projects.html)">See project</a>.</p>
 </details>
 
@@ -68,6 +68,7 @@ Undergraduate student at ADA University (School of SITE), studying Information T
 ---
 
 If you prefer a downloadable resume, add a PDF under `assets/resume.pdf` (link above) and replace the placeholder contact fields with your final information.
+
 
 
 
