@@ -1,7 +1,7 @@
 ---
 layout: default
 title: About
-permalink: /extremoly/about.html
+permalink: /about.md
 ---
 
 ## About Me
