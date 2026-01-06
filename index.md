@@ -4,7 +4,7 @@ title: Home
 ---
 
 <section class="hero">
-  <img src="/assets/images/anonim.png" alt="Profile" class="profile-photo" />
+  <img src="{{ '/assets/images/anonim.png' | relative_url }}" alt="Anonim Image">
   <div class="hero-text">
     <h1>AMIN HUSEYNLI </h1>
     <p class="lead">I’m a passionate web developer with strong skills in HTML, CSS, JavaScript, and Python. I enjoy creating clean, responsive, and user-friendly websites, turning ideas into functional digital experiences. I use Git for efficient version control and collaboration, and I’m constantly learning new tools and best practices to improve performance, design, and code quality.</p>
@@ -25,3 +25,4 @@ title: Home
     <p>You know where to find my credentials.</p>
   </article>
 </section>
+
