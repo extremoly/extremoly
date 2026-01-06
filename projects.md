@@ -19,7 +19,7 @@ permalink: /projects.html
 %}
 
 {% include project-card.html
-	image="/assets/images/coding.png"
+	image="/assets/images/coding.png" 
 	title="Project 2 — Hour of Code"
 	tags="Block-based • Learning"
 	description="A short Hour of Code project designed to teach programming basics through an interactive game."
@@ -28,4 +28,5 @@ permalink: /projects.html
 
 <!-- Add more include blocks for additional projects -->
 </section>
+
 
