@@ -9,8 +9,8 @@ title: Home
     <h1>AMIN HUSEYNLI </h1>
     <p class="lead">I’m a passionate web developer with strong skills in HTML, CSS, JavaScript, and Python. I enjoy creating clean, responsive, and user-friendly websites, turning ideas into functional digital experiences. I use Git for efficient version control and collaboration, and I’m constantly learning new tools and best practices to improve performance, design, and code quality.</p>
     <p>
-      <a class="btn" href="/projects.html">See my projects</a>
-      <a class="btn ghost" href="/about.html">About</a>
+      <a class="btn" href="/extremoly/projects.html">See my projects</a>
+      <a class="btn ghost" href="/extremoly/about.html">About</a>
     </p>
   </div>
 </section>
@@ -25,4 +25,5 @@ title: Home
     <p>You know where to find my credentials.</p>
   </article>
 </section>
+
 
