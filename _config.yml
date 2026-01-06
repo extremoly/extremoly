@@ -1,4 +1,4 @@
-title: "Your Name - Portfolio"
+title: "Amin Huseynli - Portfolio"
 email: "your.email@example.com"
 description: "Personal portfolio showcasing projects and background."
 baseurl: "/extremoly" # change if deploying to username.github.io/repo
@@ -12,3 +12,4 @@ defaults:
       type: "pages"
     values:
       layout: "default"
+
