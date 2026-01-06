@@ -14,7 +14,7 @@ You can download this resume or interact with the sections below. Use the copy b
 - **Instagram:** <a href="https://www.instagram.com/ahsnlyyy/" target="_blank" rel="noopener">@ahsnlyyy</a>
 
 <p class="resume-actions">
-	<a class="btn" href="/assets/resume.pdf" download>Download PDF</a>
+	<a class="btn" href="/assets/resume.pdf" download>Download PDF</a> 
 	<button class="btn ghost" id="print-resume">Print View</button>
 	<button class="btn ghost" id="toggle-collapse">Toggle all sections</button>
 </p>
@@ -68,3 +68,4 @@ Undergraduate student at ADA University (School of SITE), studying Information T
 ---
 
 If you prefer a downloadable resume, add a PDF under `assets/resume.pdf` (link above) and replace the placeholder contact fields with your final information.
+
