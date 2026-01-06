@@ -13,7 +13,7 @@ title: Home
       <a class="btn ghost" href="/extremoly/about.html">About</a>
     </p>
   </div>
-</section>
+</section> 
 
 <section class="features">
   <article>
@@ -25,5 +25,6 @@ title: Home
     <p>You know where to find my credentials.</p>
   </article>
 </section>
+
 
 
